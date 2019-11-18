@@ -1,0 +1,62 @@
+@import "../../assets/global/_customfont.scss";
+
+.footer {
+  background: url("../../assets/footerBg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 200px;
+  width: 100%;
+}
+
+.footer-main {
+  padding-top: 120px;
+  display: flex;
+}
+
+.footer-brand {
+  width: 50%;
+  text-align: center;
+}
+
+.footer-brand h2 {
+  font-family: "Proxima Nova";
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.footer-social {
+  width: 50%;
+  text-align: center;
+}
+
+.footer-social ul li {
+  display: inline;
+  margin: 5px;
+}
+
+.footer-social ul li img:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .footer-main {
+    display: block;
+    padding-top: 105px;
+  }
+  .footer-brand {
+    width: 100%;
+  }
+
+  .footer-social {
+    width: 100%;
+  }
+
+  .footer-social ul {
+    margin-right: 35px;
+    margin-bottom: 0;
+  }
+}

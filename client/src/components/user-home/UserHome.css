@@ -1,0 +1,107 @@
+@import "../../assets/global/_customfont.scss";
+
+.home-main {
+  background: url("../../assets/bg.png");
+  height: 100vh;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+}
+
+.home-container {
+  text-align: center;
+  margin-top: 170px;
+}
+
+.home-heading {
+  text-align: center;
+}
+
+.home-heading h2 {
+  color: white;
+  font-family: "Proxima Nova";
+  font-weight: 100;
+  font-size: 28pt;
+}
+
+.home-heading h2 span {
+  font-weight: 800;
+}
+
+.home-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.home-buttons > * {
+  margin-right: 20px;
+}
+
+.home-buttons button {
+  width: 220px;
+  margin-right: 20px;
+}
+
+Modal > * {
+  border: none;
+}
+
+.search-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 200px;
+  background-color: rgba(95, 116, 128, 0.94);
+}
+
+.search-content-modal {
+  color: white;
+  outline: none;
+  text-align: center;
+}
+
+.search-content-modal button {
+  color: black;
+  width: 90px;
+  margin-left: 10px;
+  height: 53px;
+}
+
+.search-content-modal form {
+  margin-top: 50px;
+}
+
+#transition-modal-title {
+  color: white;
+  text-transform: uppercase;
+  font-size: 28px;
+  line-height: 50px;
+  opacity: 0.5;
+}
+
+@media (min-width: 450px) and (max-width: 600px) {
+  .home-main {
+    height: 110vh;
+  }
+  .home-buttons button {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .home-heading {
+    padding: 0 10px 0 10px;
+  }
+
+  .home-container {
+    margin-top: 90px;
+  }
+  .home-main {
+    height: 150vh;
+  }
+  .home-buttons button {
+    margin-bottom: 20px;
+    margin-right: 0px;
+  }
+}

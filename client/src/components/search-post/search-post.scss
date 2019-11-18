@@ -1,0 +1,97 @@
+.search-post-container {
+  background-color: rgba(235, 245, 246, 1);
+  width: 370px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+
+  input {
+    width: 310px;
+    height: 45px;
+    outline: none;
+    margin: 0;
+    padding: 4px;
+  }
+
+  button {
+    margin: 0;
+    height: 53px;
+    width: 60px;
+  }
+}
+
+.search-result-tab {
+  width: 370px;
+
+  ul {
+    padding: 0;
+  }
+
+  table {
+    background-color: rgba(235, 245, 246, 1);
+    width: 380px;
+    thead tr h4 {
+      margin: 0;
+      margin-left: 10px;
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-family: "Proxima Nova";
+    }
+
+    tbody {
+      .no-search-result {
+        width: 100%;
+        text-align: center;
+        span {
+          color: rgba(1, 1, 1, 0.4);
+          font-family: "Proxima Nova";
+        }
+      }
+    }
+
+    .main-strip {
+      display: flex;
+      align-items: center;
+      border-top: 1px solid rgba(0, 0, 0, 0.2);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+      .strip-left {
+        width: 60%;
+        margin-left: 10px;
+        h4 {
+          font-family: "Proxima Nova";
+          font-size: 15px;
+          font-weight: 300;
+        }
+      }
+
+      .strip-right {
+        width: 40%;
+        text-align: right;
+        margin-right: 10px;
+
+        .MuiRating-root {
+          color: rgba(0, 211, 184, 1);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .search-post-container {
+    width: 97%;
+    margin-top: 10px;
+  }
+  .search-post-container input {
+    width: 100%;
+  }
+  .search-result-tab {
+    width: 100%;
+    table {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,59 @@
+.search-main-container .footer {
+  bottom: unset;
+}
+
+.search-main {
+  height: 100vh;
+  width: 100%;
+  min-width: 600px;
+  position: relative;
+}
+
+.map-container-search {
+  height: 75vh;
+  z-index: 10;
+  position: relative;
+}
+
+.map-container-search .gmnoprint {
+  display: none;
+}
+
+.map-container-search button {
+  display: none;
+}
+
+.search-container {
+  background-color: rgba(49, 64, 73, 0.7);
+  height: 90px;
+  width: 100%;
+  text-align: center;
+  z-index: 40;
+  position: absolute;
+}
+
+.search-place {
+  padding-top: 10px;
+  width: 820px;
+  margin: 0 auto;
+}
+
+.input-search {
+  width: 800px;
+}
+
+@media screen and (max-width: 600px) {
+  .search-place {
+    padding-top: 10px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .autocomplete-input-search {
+    width: 80%;
+  }
+
+  .input-search {
+    width: 90%;
+  }
+}

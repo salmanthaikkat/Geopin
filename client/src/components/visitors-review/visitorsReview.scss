@@ -1,0 +1,60 @@
+@import "../../assets/global/_customfont.scss";
+
+.visitors-review-main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 10px;
+
+  .visitors-review-main-heading {
+    font-family: "Proxima Nova";
+    color: rgba(68, 68, 68, 1);
+    font-size: 24px;
+    font-weight: 300;
+    margin: 15px 0 15px 0;
+    display: flex;
+    justify-content: space-between;
+
+    .review-filter-btn {
+      color: rgba(0, 211, 184, 1);
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .filter-main {
+      background-color: rgba(0, 211, 184, 1);
+    }
+  }
+
+  .search-no-reviews-section {
+    width: 100%;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 28px;
+    color: rgba(1, 1, 1, 0.3);
+  }
+}
+
+.MuiMenu-paper {
+  width: 340px;
+  padding: 2px;
+
+  .filter-main-parallel-input {
+    display: flex;
+  }
+
+  button {
+    width: 93.4%;
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .visitors-review-main {
+    max-width: 500px;
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "name": "geopin",
+  "version": "1.0.0",
+  "description": "geopin backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://code.qburst.com/salman/geopin.git"
+  },
+  "engines": {
+    "node": "12.9.0",
+    "npm": "6.10.2"
+  },
+  "keywords": [
+    "geopin"
+  ],
+  "author": "salman",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/storage": "^4.0.0",
+    "axios": "^0.19.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.3.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "firebase": "^7.2.1",
+    "image-downloader": "^3.5.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.6.11",
+    "multer": "^1.4.2",
+    "nodemailer": "^6.3.0",
+    "passport": "^0.4.0",
+    "passport-google-oauth": "^2.0.0",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "eslint": "^6.2.2",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.14.3",
+    "prettier": "1.18.2"
+  }
+}

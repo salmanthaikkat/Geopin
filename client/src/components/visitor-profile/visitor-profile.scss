@@ -1,0 +1,250 @@
+@import "../../assets/global/_customfont.scss";
+
+.visitor-profile-container {
+  .footer {
+    bottom: unset;
+  }
+  .user-review-card-map {
+    div:first:child {
+      width: 490px !important;
+    }
+  }
+}
+
+.visitor-profile-header-section {
+  background: url("../../assets/bg.png");
+  height: 250px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  color: white;
+  margin-bottom: 100px;
+
+  * {
+    font-family: "Proxima Nova";
+  }
+
+  .visitor-details {
+    display: flex;
+    margin-bottom: 10px;
+
+    .already-friend-main {
+      display: flex;
+      align-items: center;
+      .already-friend-text {
+        font-family: "Proxima Nova";
+      }
+    }
+  }
+}
+
+.save-contact-btn {
+  button {
+    width: 200px;
+    margin: 0;
+  }
+}
+
+.save-contact-btn-disabled {
+  button {
+    width: 200px;
+    margin: 0;
+    background-color: gray;
+
+    &:hover {
+      cursor: not-allowed;
+    }
+  }
+}
+
+.remove-contact-btn {
+  button {
+    margin: 0;
+    width: 200px;
+    background-color: tomato;
+  }
+}
+
+.visitor-profile-info-left {
+  display: flex;
+  align-items: flex-end;
+
+  .visitor-profile-img-circle {
+    transform: translateY(60px);
+
+    img {
+      border: 3px solid white;
+      border-radius: 100px;
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+  .visitor-country-info {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+
+    .visitor-country-text {
+      margin-left: 10px;
+    }
+  }
+
+  .visitor-profile-tab {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .visitor-profile-desc {
+    margin-left: 10px;
+
+    h3 {
+      font-size: 26px;
+      font-weight: 200;
+      margin: 0;
+    }
+
+    h4 {
+      margin-top: 0;
+    }
+  }
+}
+
+.visitor-profile-info-right {
+  margin-right: 20px;
+  h3 {
+    margin: 0 0 13px 0;
+    font-size: 29px;
+    font-weight: 200;
+  }
+  h5 {
+    margin: 0;
+  }
+  .visitor-no-phone-text {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.4);
+  }
+}
+
+.visitor-profile-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px;
+
+  .visitor-profile-content-left {
+    margin-right: 15px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .visitor-profile-header-section {
+    margin-bottom: unset;
+    height: 320px;
+    padding-bottom: 45px;
+
+    .visitor-profile-tab {
+      flex-direction: column;
+
+      .visitor-profile-desc {
+        h3 {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+
+  .visitor-profile-info-left {
+    .visitor-profile-img-circle {
+      transform: translateY(-10px);
+    }
+
+    img {
+      height: 100px;
+      width: 100px;
+    }
+
+    .visitor-country-info {
+      transform: translateX(12px);
+      margin: unset;
+    }
+  }
+
+  .visitor-details {
+    .remove-contact-btn {
+      position: relative;
+      right: 10px;
+    }
+  }
+
+  .visitor-profile-info-right {
+    //margin: unset;
+    //transform: translate(120px, -55px);
+    margin-left: 20px;
+
+    h3 {
+      font-size: 23px;
+    }
+  }
+
+  .visitor-profile-content {
+    .visitor-profile-content-left {
+      margin: unset;
+    }
+  }
+}
+
+.visitor-page-content {
+  max-width: 1000px;
+  margin: 0 auto;
+
+  .MuiGrid-root {
+    width: unset;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 840px) {
+  .visitor-profile-header-section {
+    padding-bottom: 60px;
+    .visitor-details {
+      margin-top: 60px;
+    }
+    .visitor-profile-info-left {
+      .visitor-profile-img-circle {
+        transform: translateY(16px);
+        img {
+          height: 100px;
+          width: 100px;
+        }
+      }
+    }
+  }
+
+  .visitor-page-content {
+    width: 500px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .visitor-profile-header-section {
+    .visitor-profile-info-left {
+      .visitor-profile-img-circle {
+        img {
+          height: 100px;
+          width: 100px;
+        }
+      }
+    }
+  }
+
+  .visitor-page-content {
+    width: 100%;
+
+    .MuiGrid-root {
+      width: 100%;
+    }
+  }
+}

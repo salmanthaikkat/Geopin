@@ -1,0 +1,169 @@
+@import "../../assets/global/_customfont.scss";
+
+.map-container {
+  height: 85vh;
+  z-index: 10;
+  position: relative;
+}
+
+.checkin-container {
+  background-color: rgba(49, 64, 73, 0.7);
+  height: 75px;
+  width: 100%;
+  z-index: 40;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.map-container {
+  .gmnoprint {
+    display: none;
+  }
+
+  button {
+    display: none;
+  }
+}
+
+.checkin-place {
+  padding-top: 10px;
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+
+  button {
+    margin: 0;
+    width: 100px;
+  }
+}
+
+footer {
+  z-index: 40;
+}
+
+.autocomplete-input {
+  width: 850px;
+}
+
+.checkin-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 200px;
+}
+
+.checkin-content-modal {
+  color: white;
+  outline: none;
+  text-align: center;
+
+  table {
+    background-color: white;
+    border-radius: 4px;
+  }
+
+  textarea {
+    outline: none;
+    border: none;
+    height: 200px;
+    width: 500px;
+    border-radius: 4px 4px 0 0;
+    padding: 10px 0 0 10px;
+    font-size: 16px;
+    font-family: "Proxima Nova";
+  }
+
+  .rating-field {
+    height: 40px;
+    width: 500px;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+
+    .rating-field-title {
+      text-align: left;
+      padding-left: 15px;
+      padding-bottom: 10px;
+      width: 50%;
+      * {
+        font-size: 18px;
+        font-weight: 550;
+        font-family: "Proxima Nova";
+      }
+    }
+
+    .rating-field-star {
+      text-align: right;
+      padding-right: 5px;
+      padding-bottom: 10px;
+      width: 50%;
+
+      .MuiRating-root {
+        color: rgba(0, 211, 184, 1);
+      }
+    }
+  }
+}
+
+.description-done-btn {
+  text-align: right;
+  margin-top: 10px;
+  button {
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .checkin-container {
+    width: 100%;
+    height: 150px;
+  }
+
+  .checkin-place {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .autocomplete-input {
+    width: 300px;
+  }
+}
+
+@media (min-width: 735px) and (max-width: 1086px) {
+  .checkin-content-modal {
+    textarea {
+      width: 400px;
+    }
+
+    .rating-field {
+      width: 400px;
+    }
+  }
+}
+
+@media (min-width: 450px) and (max-width: 787px) {
+  .checkin-content-modal {
+    textarea {
+      width: 300px;
+    }
+
+    .rating-field {
+      width: 300px;
+    }
+  }
+}
+
+@media screen and (max-width: 449px) {
+  .checkin-content-modal {
+    textarea {
+      width: 300px;
+    }
+
+    .rating-field {
+      width: 300px;
+    }
+  }
+}

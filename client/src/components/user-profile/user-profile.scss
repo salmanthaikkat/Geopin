@@ -1,0 +1,313 @@
+@import "../../assets/global/_customfont.scss";
+
+.user-profile-container {
+  .footer {
+    bottom: unset;
+  }
+}
+
+.user-profile-header-section {
+  background: url("../../assets/bg.png");
+  height: 250px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  color: white;
+  margin-bottom: 100px;
+
+  * {
+    font-family: "Proxima Nova";
+  }
+}
+
+.user-profile-info-left {
+  display: flex;
+  align-items: flex-end;
+
+  .user-profile-img-circle {
+    transform: translateY(60px);
+
+    img {
+      border: 3px solid white;
+      border-radius: 100px;
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+  .user-country-info {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+
+    .user-country-name {
+      margin-left: 10px;
+    }
+  }
+
+  .user-profile-tab {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .user-profile-desc {
+    margin-left: 10px;
+
+    h3 {
+      font-size: 26px;
+      font-weight: 200;
+      margin: 0;
+    }
+
+    h4 {
+      margin-top: 0;
+    }
+  }
+}
+
+.user-profile-info-right {
+  margin-right: 20px;
+  h3 {
+    margin: 0 0 13px 0;
+    font-size: 29px;
+    font-weight: 200;
+  }
+  h5 {
+    margin: 0;
+  }
+  .no-phone-text {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.4);
+  }
+}
+
+.user-profile-content-right {
+  .user-review-card-container:first-child {
+    margin-top: unset;
+  }
+
+  .no-reviews-section {
+    width: 500px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .no-data-icon {
+      height: 100px;
+      width: 100px;
+      color: rgba(49, 64, 73, 1);
+    }
+
+    span {
+      color: rgba(1, 1, 1, 0.4);
+      font-family: "Proxima Nova";
+    }
+  }
+}
+
+.user-profile-edit-btn button {
+  color: rgba(0, 211, 184, 1);
+  background: transparent;
+  border: 1px solid rgba(0, 211, 184, 1);
+  width: 50px;
+  height: 20px;
+  position: absolute;
+  top: 80px;
+  right: 20%;
+  text-transform: unset;
+}
+
+.edit-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 200px;
+}
+
+.edit-content-modal {
+  color: black;
+  outline: none;
+  min-height: 500px;
+  background-color: white;
+  border-radius: 6px;
+  opacity: 1;
+
+  .user-edit-modal-title {
+    text-align: center;
+    font-family: "Proxima Nova";
+  }
+
+  input {
+    border: 1px solid gray;
+    width: 350px;
+    border: 1px solid rgba(1, 1, 1, 0.2);
+  }
+
+  .user-profile-pic-upload {
+    text-align: center;
+  }
+
+  .user-edit-done-btn {
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+
+  .user-profile-pic-upload > input {
+    display: none;
+  }
+
+  .user-profile-pic-upload {
+    .picture-error-msg {
+      color: tomato;
+      font-family: "Proxima Nova";
+    }
+  }
+
+  .user-image-preview {
+    //border: 5px solid rgba(0, 211, 184, 1);
+    border-radius: 100px;
+    height: 150px;
+    width: 150px;
+  }
+
+  .modal-error-msg {
+    color: tomato;
+    text-align: center;
+  }
+
+  .profile-img-edit-btn-icon {
+    position: relative;
+    bottom: 115px;
+    right: 30px;
+    color: white;
+    background-color: rgba(0, 211, 184, 1);
+    padding: 5px;
+    border-radius: 10px;
+  }
+
+  .user-image-preview:hover {
+    cursor: pointer;
+  }
+
+  .user-edit-form-field {
+    margin: 20px;
+    font-family: "Proxima Nova";
+  }
+
+  .user-profile-nationality-select {
+    text-align: center;
+  }
+
+  .user-edit-done-btn {
+    text-align: end;
+    margin-top: 0px;
+
+    .submit_btn--disabled {
+      pointer-events: none;
+      background-color: grey;
+      opacity: 0.3;
+    }
+
+    .cancel-edit-btn {
+      margin-right: 5px;
+      background-color: tomato;
+    }
+  }
+
+  .user-edit-done-btn > button {
+    width: 100px;
+  }
+}
+
+#transition-modal-title {
+  color: white;
+  text-transform: uppercase;
+  font-size: 28px;
+  line-height: 50px;
+  opacity: 0.5;
+}
+
+.user-profile-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .user-profile-content-left {
+    margin-right: 15px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .user-profile-header-section {
+    margin-bottom: unset;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .user-profile-tab {
+      .user-profile-desc {
+        h3 {
+          font-size: 22px;
+        }
+      }
+    }
+    .user-profile-info-right {
+      margin-right: unset;
+    }
+  }
+
+  .user-profile-content-right {
+    .no-reviews-section {
+      width: 100%;
+    }
+  }
+
+  .user-profile-info-left {
+    display: unset;
+    align-items: unset;
+    .user-profile-img-circle {
+      text-align: center;
+      transform: unset;
+      img {
+        height: 100px;
+        width: 100px;
+      }
+    }
+
+    .user-country-info {
+      margin-left: 13px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .user-profile-info-right {
+    h3 {
+      font-size: 23px;
+    }
+  }
+
+  .user-profile-content {
+    .user-profile-content-left {
+      margin: unset;
+    }
+  }
+
+  .user-profile-edit-btn button {
+    top: 112px;
+    right: 45%;
+  }
+
+  .edit-content-modal {
+    width: 90%;
+
+    input {
+      width: 90%;
+    }
+  }
+}

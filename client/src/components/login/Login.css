@@ -1,0 +1,122 @@
+@import "../../assets/global/_customfont.scss";
+
+.container {
+  background: url("../../assets/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  position: relative;
+}
+
+.main-container {
+  position: relative;
+  height: 100vh;
+}
+
+.logo-container {
+  text-align: center;
+}
+
+.logo-container img {
+  margin-top: 52px;
+}
+
+.login-form-container {
+  position: relative;
+  top: 80px;
+  text-align: center;
+}
+
+.login-form-heading {
+  width: 500px;
+  margin: 0 auto;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.login-heading {
+  font-family: "Proxima Nova";
+  font-size: 20px;
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.login-form {
+  text-align: center;
+}
+
+.login-form .social-auth {
+  margin-top: 20px;
+}
+
+.login-form .social-auth .social-auth-text {
+  color: white;
+  font-family: "Proxima Nova";
+  margin-right: 10px;
+}
+
+.login-form .social-auth .google-auth-btn {
+  width: 10px;
+  color: white;
+}
+
+.login-form .social-auth .google-auth-btn:hover {
+  background-color: unset;
+}
+
+button {
+  width: 500px;
+  height: 50px;
+  border: none;
+  border-radius: 3px;
+  background-color: rgba(0, 211, 184, 1);
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05);
+  font-family: "Proxima Nova";
+  font-weight: bolder;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+}
+
+.bottom-text {
+  margin-top: 50px;
+  font-family: "Proxima Nova";
+  color: white;
+  font-size: 16px;
+  font-weight: 100;
+}
+
+.login-error {
+  color: tomato;
+  font-family: "Proxima Nova";
+}
+
+.bottom-text > * {
+  text-decoration: none;
+}
+
+.bottom-text span {
+  color: rgba(0, 211, 184, 1);
+  font-size: 20px;
+  font-weight: 900;
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    height: 110vh !important;
+  }
+
+  .login-form-heading {
+    width: 95%;
+  }
+
+  .login-input {
+    width: 90%;
+  }
+
+  .login-btn {
+    width: 95%;
+  }
+}
